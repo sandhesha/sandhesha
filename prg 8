@@ -1,50 +1,41 @@
-#include<stdio.h>
-#include<stdlib.h>
-int *w,n,m,*sel;
-void print_soln()
-{
-int i;
-printf("Soln:");
-for(i=0;i<n;i++)
-{
-if(sel[i]==1)
-{
-printf("%d\t",w[i]);
+const express = require(&#39;express&#39;);
+const app = express();
+const port = 3000;
+
+// Helper function to check prime numbers
+function isPrime(num) {
+if (num &lt;= 1) return false;
+if (num &lt;= 3) return true;
+
+if (num % 2 === 0 || num % 3 === 0) return false;
+
+for (let i = 5; i * i &lt;= num; i += 6) {
+if (num % i === 0 || num % (i + 2) === 0) return false;
 }
+return true;
 }
-printf("\n");
+
+// Route to find prime numbers less than 100
+app.get(&#39;/find_prime_100&#39;, (req, res) =&gt; {
+const primes = [];
+for (let i = 2; i &lt; 100; i++) {
+if (isPrime(i)) {
+primes.push(i);
 }
-void subset_sum(int ssf,int index)
-{
-if(ssf+w[index]<=m)
-{
-sel[index]=1;
-if(ssf+w[index]==m)
-{
-print_soln();
+
 }
-else
-{
-subset_sum(ssf+w[index],index+1);
+res.json({ primes });
+});
+
+// Route to find cube numbers less than 100
+app.get(&#39;/find_cube_100&#39;, (req, res) =&gt; {
+const cubes = [];
+for (let i = 1; i * i * i &lt; 100; i++) {
+cubes.push(i * i * i);
 }
-sel[index]=0;
-subset_sum(ssf,index+1);
-}
-}
-int main()
-{
-int i;
-printf("Number of elements:");
-scanf("%d",&n);
-w=calloc(n,sizeof(int));
-sel=calloc(n,sizeof(int));
-printf("The elements:\n");
-for(i=0;i<n;i++)
-{
-scanf("%d",&w[i]);
-}
-printf("Desired Sum:");
-scanf("%d",&m);
-subset_sum(0,0);
-return 0;
-}
+res.json({ cubes });
+});
+
+app.listen(port, () =&gt; {
+console.log(`Server is running at http://localhost:${port}`);
+});
