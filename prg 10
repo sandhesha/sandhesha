@@ -1,79 +1,45 @@
-#include<stdlib.h>
-#include<stdio.h>
-#include<time.h>
-int *a,n;
-int partition(int l,int r)
-{
-int i,j,p,temp;
-i=l;
-j=r+1;
-p=a[l];
-while(i<=j)
-{
-do
-{
-i++;
-}
-while(p>=a[i]);
-do
-{
-j--;
-}
-while(p<a[j]);
-if(i<j)
-{
-temp=a[i];
-a[i]=a[j];
-a[j]=temp;
-}
-}
-temp=a[l];
-a[l]=a[j];
-a[j]=temp;
-return j;
-}
-void q_sort(int l,int r)
-{
-int s;
-if(l<r)
-{
-s=partition(l,r);
-q_sort(l,s-1);
-q_sort(s+1,r);
-}
-}
+//index.js
+import React from &#39;react&#39;;
+import ReactDOM from &#39;react-dom/client&#39;;
+import &#39;./index.css&#39;;
+import App from &#39;./App&#39;;
+import reportWebVitals from &#39;./reportWebVitals&#39;;
+const root = ReactDOM.createRoot(document.getElementById(&#39;root&#39;));
+root.render(
+&lt;React.StrictMode&gt;
+&lt;App /&gt;
+&lt;/React.StrictMode&gt;
+);
 
-ANALYSIS AND DESIGN OF ALGORITHMS
+//App.js
+import React, { useState, useEffect } from &quot;react&quot;;
+import axios from &quot;axios&quot;;
+function DataCollector() {
+const [data, setData] = useState([]);
+useEffect(() =&gt; {
+fetchData();
+}, []);
 
-AJIET, MANGALURU 28
-void print_array()
-{
-int i;
-for(i=0;i<n;i++)
-{
-printf("%d\t",a[i]);
+const fetchData = async () =&gt; {
+try {
+const response = await axios.get(
+&quot;https://dummy.restapiexample.com/api/v1/employees&quot;
+);
+setData(response.data.data);
+} catch (error) {
+console.error(&quot;Error fetching data:&quot;, error);
 }
-printf("\n");
+};
+return (
+&lt;div&gt;
+&lt;h2&gt;Data Collection&lt;/h2&gt;
+&lt;button onClick={fetchData}&gt;Fetch Data&lt;/button&gt;
+&lt;ul&gt;
+{data.map((item, index) =&gt; (
+&lt;li key={index}&gt;{item.employee_name}&lt;/li&gt;
+))}
+&lt;/ul&gt;
+&lt;/div&gt;
+);
 }
-int main()
-{
-int i;
-float start,end,complexity;
-printf("Enter the value of n:");
-scanf("%d",&n);
-a=calloc(n,sizeof(int));
-for(i=0;i<n;i++)
-{
-a[i]=rand()%20;
-}
-printf("The array is:\n");
-print_array();
-start=clock();
-q_sort(0,n-1);
-end=clock();
-printf("The sorted array is:\n");
-print_array();
-complexity=(end-start)/CLOCKS_PER_SEC;
-printf("Complexity=%f\n",complexity);
-return 0;
-}
+export default DataCollector;
