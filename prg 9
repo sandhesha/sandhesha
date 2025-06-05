@@ -1,51 +1,72 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
-int *a,n;
-void swap(int* x,int* y)
+const fs = require("fs");
+const createFile = (fileName, data) =>
 {
-int temp=*x;
-*x=*y;
-*y=temp;
-}
-void selectionsort(int a[],int n)
+fs.writeFile(fileName, data, (err) =>
 {
-int i,j,min;
-for(i=0;i<n-1;i++)
+if (err)
 {
-min=i;
-for(j=i+1;j<n;j++)
-if(a[j]<a[min])
-min=j;
-swap(&a[min],&a[i]);
-}
-}
-void print_array()
+console.error("Error creating file:", err);
+} 
+else
 {
-int i;
-for(i=0;i<n;i++)
-printf("%d \t",a[i]);
-printf("\n");
+console.log("File created successfully");
 }
-int main()
+});
+};
+//createFile("example.txt", "This is a sample text file");
+const readFile = (fileName) => {
+fs.readFile(fileName, "utf8", (err, data) => {
+if (err) {
+console.error("Error reading file:", err);
+} else {
+console.log("File content:");
+console.log(data);
+}
+});
+};
+//readFile("example.txt");
+const appendFile = (fileName, newData) =>
 {
-int i;
-float start,end,complexity;
-printf("Enter the value of n:");
-scanf("%d",&n);
-a=calloc(n,sizeof(int));
-for(i=0;i<n;i++)
+fs.appendFile(fileName, newData, (err) =>
 {
-a[i]=rand()%20;
+if (err) 
+{
+console.error("Error appending to file:", err);
+} 
+else
+{
+console.log("Data appended to file successfully");
 }
-printf("The array is:\n");
-print_array();
-start=clock();
-selectionsort(a,n);
-end=clock();
-printf("The sorted array is:\n");
-print_array();
-complexity=(end-start)/CLOCKS_PER_SEC;
-printf("Complexity=%f\n",complexity);
-return 0;
+});
+};
+//appendFile("example.txt", "In Additional data appended");
+const updateFile = (fileName, newData) =>
+{
+fs.writeFile(fileName, newData, (err) =>
+{
+if (err)
+{
+console.error("Error updating file:", err);
 }
+else
+{
+console.log("File updated successfully.");
+} 
+});
+};
+//updateFile("example.txt", "This is updated content");
+const deleteFile = (fileName) =>
+{
+fs.unlink(fileName, (err) =>
+{
+if (err)
+{
+console.error("Error deleting file:", err);
+} 
+else
+{
+console.log("File deleted successfully.");
+}
+});
+};
+// deleteFile("example.txt");
