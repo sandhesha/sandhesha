@@ -1,119 +1,54 @@
-#include<stdio.h>
-int min(int,int);
-void floyds(int p[10][10],int n)
+const http = require(&quot;http&quot;);
+// Create a server
+const server = http.createServer((req, res) =&gt;
 {
-int i,j,k;
-for(k=1;k<=n;k++)
-for(i=1;i<=n;i++)
-for(j=1;j<=n;j++)
-if(i==j)
-p[i][j]=0;
+const headers = req.headers; // Get request headers
+console.log(headers, &quot;.....&quot;);
+// Check if &#39;cookie&#39; header exists
+if (headers.cookie)
+{
+console.log(&quot;Cookies:&quot;, headers.cookie);
+}
 else
-p[i][j]=min(p[i][j],p[i][k]+p[k][j]);
-}
-int min(int a,int b)
 {
-if(a<b)
-return(a);
-else
-return(b);
-}
-void main()
-{
-int p[10][10],w,n,e,u,v,i,j;
-printf("\nEnter the number of vertices:");
-scanf("%d",&n);
-printf("\nEnter the number of edges:\n");
-scanf("%d",&e);
-for(i=1;i<=n;i++)
-{
-for(j=1;j<=n;j++)
-p[i][j]=999;
+console.log(&quot;No cookies found in the request header.&quot;);
 
-ANALYSIS AND DESIGN OF ALGORITHMS
+}
+res.end(&quot;Check console for cookies information.&quot;);
 
-AJIET, MANGALURU 10
-}
-for(i=1;i<=e;i++)
+});
+// Listen on port 3000
+server.listen(3000, ( ) =&gt;
 {
-printf("\nEnter the end vertices of edge %d with its weight\n",i);
-scanf("%d %d %d",&u,&v,&w);
-p[u][v]=w;
-}
-printf("\nMatrix of input data:\n");
-for(i=1;i<=n;i++)
-{
-for(j=1;j<=n;j++)
-printf("%d\t",p[i][j]);
-printf("\n");
-}
-floyds(p,n);
-printf("\nTransitive closure:\n");
-for(i=1;i<=n;i++)
-{
-for(j=1;j<=n;j++)
-printf("%d\t",p[i][j]);
-printf("\n");
-}
-printf("\nThe shortest paths are:\n");
-for(i=1;i<=n;i++)
-for(j=1;j<=n;j++)
-{
-if(i!=j)
-printf("\n<%d,%d>=%d",i,j,p[i][j]);
-}
-}
+console.log(&quot;Server running at http://localhost:3000/&quot;);
+});
 
 
 
 
-#include<stdlib.h>
-#include<stdio.h>
-int**a,n;
-void warshall()
-{
-int i,j,k;
-for(k=0;k<n;k++){
-for(j=0;j<n;j++){
-for(i=0;i<n;i++){
-a[i][j]=a[i][j]||a[i][k]&&a[k][j];
-}
-}
-}
-}
-void print_array()
-{
-int i,j;
-for(i=0;i<n;i++){
-for(j=0;j<n;j++){
-printf("%d\t",a[i][j]);
-}
-printf("\n");
-}
-}
-int main()
-{
-int i,j;
-printf("Number of vertices:");
-scanf("%d",&n);
-a=calloc(n,sizeof(int*));
-for(i=0;i<n;i++){
-a[i]=calloc(n,sizeof(int));
-}
-printf("Adjacency Matrix:\n");
-for(i=0;i<n;i++){
-for(j=0;j<n;j++){
-scanf("%d",&a[i][j]);
-}
-}
-printf("Entered adjacency matrix:\n");
-print_array();
-warshall();
-printf("Transitive closure matrix:\n");
+// Define a car object
+const car = {
 
-ANALYSIS AND DESIGN OF ALGORITHMS
-
-AJIET, MANGALURU 13
-print_array();
-return 0;
+ make: &#39;Toyota&#39;,
+ model: &#39;Fortuner&#39;,
+ year: 2025,
+  color: &#39;black&#39;
+};
+// Print the properties of the car object
+console.log(&#39;Original car object:&#39;);
+for (const property in car)
+{
+ console.log(`${property}: ${car[property]}`);
 }
+// Delete the second property
+const secondProperty = Object.keys(car)[1];
+delete car[secondProperty];
+
+console.log(&#39;\nCar object after deleting the second property:&#39;);
+for (const property in car)
+{
+ console.log(`${property}: ${car[property]}`);
+}
+// Get the length of the object
+const length = Object.keys(car).length;
+console.log(`\nLength of the car object after deleting the second property: ${length}`);
