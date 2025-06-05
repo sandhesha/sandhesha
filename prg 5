@@ -1,58 +1,74 @@
-#include<stdio.h>
-#include<stdlib.h>
-int **a,n,*visited,*res,*s,top=-1,k;
-void dfs(int u)
-{
-int v;
-s[++top]=u;
-visited[u]=1;
-for(v=0;v<n;v++)
-{
-if(visited[v]!=1 && a[u][v]==1)
-{
-dfs(v);
+//Client side
+//index.js
+import React from &#39;react&#39;; // Imports the React library.
+import ReactDOM from &#39;react-dom/client&#39;; // Imports the ReactDOM library, which provides methods to
+interact with the browser&#39;s DOM.
+import &#39;./index.css&#39;; // Imports CSS for styling
+import App from &#39;./App&#39;; // Imports the main component of your application, App.js
+import reportWebVitals from &#39;./reportWebVitals&#39;; // Imports a function for measuring performance
+const root = ReactDOM.createRoot(document.getElementById(&#39;root&#39;)); // Creates a root for
+the React application to render into. It finds the HTML element with the ID &#39;root&#39;
+root.render(
+&lt;React.StrictMode&gt;
+&lt;App /&gt;
+&lt;/React.StrictMode&gt;
+);
+
+//App.js
+import React, { useState } from &quot;react&quot;;
+import axios from &quot;axios&quot;;
+function App() {
+const [name, setName] = useState(&quot;&quot;); // Creates a state variable name to store the fruit name,
+initialized as an empty string. setName is the function to update this state.
+const [price, setPrice] = useState(&quot;&quot;);
+const url = &quot;http://localhost:5000&quot;; // Defines the URL of your Node.js server.
+const handleSubmit = async (e) =&gt; {
+e.preventDefault(); // Prevents the default browser form submission, which would cause a page
+reload.
+try {
+
+await axios.post(`${url}/api/fruits`, { name, price });
+console.log(&quot;Data sent successfully&quot;);
+// Optionally, you can reset the form fields here
+} catch (error) {
+console.error(&quot;Error sending data:&quot;, error);
 }
+};
+return (
+&lt;div&gt;
+&lt;h1&gt;Fruit Data Form&lt;/h1&gt;
+&lt;form onSubmit={handleSubmit}&gt;
+&lt;label&gt; Fruit Name: &lt;input type=&quot;text&quot; value={name} onChange={(e) =&gt;
+setName(e.target.value)}
+/&gt;
+&lt;/label&gt;
+&lt;br /&gt;
+&lt;label&gt; Price: &lt;input type=&quot;text&quot; value={price} onChange={(e) =&gt;
+setPrice(e.target.value)}
+/&gt;
+&lt;/label&gt;
+&lt;br /&gt;
+&lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+);
 }
-res[k--]=s[top--];
-}
-void topological_sort()
-{
-int v;
-for(v=0;v<n;v++)
-{
-if(visited[v]!=1)
-{
-dfs(v);
-}
-}
-printf("The topological ordering is:\n");
-for(v=0;v<n;v++)
-{
-printf("%d\n",res[v]);
-}
-}
-int main()
-{
-int i,j;
-printf("Number of vertices:");
-scanf("%d",&n);
-a=calloc(n,sizeof(int*));
-for(i=0;i<n;i++)
-{
-a[i]=calloc(n,sizeof(int));
-}
-visited=calloc(n,sizeof(int));
-res=calloc(n,sizeof(int));
-s=calloc(n,sizeof(int));
-printf("The elements:\n");
-for(i=0;i<n;i++)
-{
-for(j=0;j<n;j++)
-{
-scanf("%d",&a[i][j]);
-}
-}
-k=n-1;
-topological_sort();
-return 0;
-}
+export default App;
+//server side –&gt;file named as server.js
+const express = require(&quot;express&quot;);
+
+const bodyParser = require(&quot;body-parser&quot;);
+const cors = require(&quot;cors&quot;);
+const app = express();
+const PORT = 5000;
+app.use(bodyParser.json());
+app.use(cors());
+// Handle POST request to &#39;/api/fruits&#39;
+app.post(&quot;/api/fruits&quot;, (req, res) =&gt; {
+const { name, price } = req.body;
+console.log(`Received data from client: Name - ${name}, Price - ${price}`);
+res.status(200).send(&quot;Data received successfully&quot;);
+});
+app.listen(PORT, () =&gt; {
+console.log(`Server is running on http://localhost:${PORT}`);
+});
