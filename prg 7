@@ -1,46 +1,55 @@
-#include<stdio.h>
-int main()
-{
-float weight[50],profit[50],ratio[50],Totalvalue,temp,capacity;
-int n,i,j;
-printf("Enter the number of items:");
-scanf("%d",&n);
-for(i=0;i<n;i++)
-{
-printf("Enter Weight and Profit for item[%d]:\n",i);
-scanf("%f %f",&weight[i],&profit[i]);
-}
-printf("Enter the capacity of knapsack:\n");
-scanf("%f",&capacity);
-for(i=0;i<n;i++)
-ratio[i]=profit[i]/weight[i];
-for(i=0;i<n;i++)
-for(j=i+1;j<n;j++)
-if(ratio[i]<ratio[j])
-{
-temp=ratio[j];
-ratio[j]=ratio[i];
-ratio[i]=temp;
-temp=weight[j];
-weight[j]=weight[i];
-weight[i]=temp;
-temp=profit[j];
-profit[j]=profit[i];
-profit[i]=temp;
-}
-printf("Knapsack problems using Greedy Algorithm:\n");
-for(i=0;i<n;i++)
-{
-if(weight[i]>capacity)
-break;
-else
-{
-Totalvalue=Totalvalue+profit[i];
-capacity=capacity-weight[i];
-}
-}
-if(i<n)
-Totalvalue=Totalvalue+(ratio[i]*capacity);
-printf("\nThe maximum value is:%f\n",Totalvalue);
-return 0;
-}
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;title&gt;Login&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Login&lt;/h1&gt;
+  &lt;form action=&quot;/login&quot; method=&quot;post&quot;&gt;
+    &lt;label for=&quot;email_id&quot;&gt;Email:&lt;/label&gt;
+    &lt;input type=&quot;email&quot; id=&quot;email_id&quot; name=&quot;email_id&quot; required&gt;&lt;br&gt;&lt;br&gt;
+    &lt;label for=&quot;password&quot;&gt;Password:&lt;/label&gt;
+    &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; required&gt;&lt;br&gt;&lt;br&gt;
+    &lt;button type=&quot;submit&quot;&gt;Login&lt;/button&gt;
+  &lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+Create a file named server.js:
+const express = require(&#39;express&#39;);
+const bodyParser = require(&#39;body-parser&#39;);
+const app = express();
+
+// Middleware
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(&#39;.&#39;)); // Serve static files (like index.html)
+
+// Hardcoded user for demo (for real apps, use a database!)
+const users = [
+  { email_id: &#39;mernlab@gmail.com&#39;, password: &#39;test@123&#39; }
+];
+
+// Route to serve the login form
+app.get(&#39;/&#39;, (req, res) =&gt; {
+  res.sendFile(__dirname + &#39;/index.html&#39;);
+});
+
+// Handle login POST request
+app.post(&#39;/login&#39;, (req, res) =&gt; {
+  const { email_id, password } = req.body;
+  const user = users.find(u =&gt; u.email_id === email_id &amp;&amp; u.password === password);
+
+  if (user) {
+    res.send(`Login successful! Welcome, ${email_id}.`);
+  } else {
+
+    res.status(401).send(&#39;Invalid email or password!&#39;);
+  }
+});
+
+// Start server
+const PORT = 3000;
+app.listen(PORT, () =&gt; {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
