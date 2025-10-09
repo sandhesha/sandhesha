@@ -7,15 +7,14 @@
 
 <p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
 
-- 🔭 I’m currently studing in **AJIET**
-
-- 🌱 I’m currently learning **bootstrap**
-
-- 👯 I’m looking to collaborate on **Web-dev**
-
-- 🤝 I’m looking for help with **web-dev**
-
-- 👨‍💻 All of my projects are available at [github.com/sandhesha](github.com/sandhesha)
+Hii!! I am Sandhesha
+🚀 AI/ML Enthusiast
+👨‍💻 3rd-year CSE/AIML student at AJIET
+💡 Passionate about building modern web applications & exploring AI/ML
+🔧 Specializing in WordPress, Shopify, and full-stack development
+🤖 Learning and implementing AI/ML models in real-world applications
+👯 I’m looking to collaborate on **Web-dev**
+👨‍💻 All of my projects are available at [github.com/sandhesha](github.com/sandhesha)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
