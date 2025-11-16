@@ -7,7 +7,7 @@
 
 <p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
 
-Hii!! I am Sandhesha/n
+Hii!! I am Sandhesha\n
 🚀 AI/ML Enthusiast
 👨‍💻 3rd-year CSE/AIML student at AJIET
 💡 Passionate about building modern web applications & exploring AI/ML
