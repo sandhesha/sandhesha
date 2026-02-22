@@ -1,30 +1,55 @@
-<h1 align="center">Hi 👋, I'm sandhesha</h1>
-<h3 align="center">A passionate frontend developer from India</h3>
+<h1 align="center">Hi 👋, I'm Sandhesha</h1>
+<h3 align="center">🚀 Frontend Developer | AI/ML Enthusiast | CSE(AIML) Student</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=sandhesha&label=Profile%20views&color=0e75b6&style=flat" alt="sandhesha" /> </p>
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=sandhesha" alt="sandhesha" /></a> </p>
-
-<p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
-
-Hii!! I am Sandhesha<br>
-🚀 AI/ML Enthusiast<br>
-👨‍💻 3rd-year CSE/AIML student at AJIET<br>
-💡 Passionate about building modern web applications & exploring AI/ML<br>
-🔧 Specializing in WordPress, Shopify, and full-stack development<br>
-🤖 Learning and implementing AI/ML models in real-world applications<br>
-👯 I’m looking to collaborate on **Web-dev**<br>
-👨‍💻 All of my projects are available at [github.com/sandhesha](github.com/sandhesha)<br>
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=sandhesha&label=Profile%20views&color=0e75b6&style=flat" alt="sandhesha" />
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> </p>
+---
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=sandhesha&show_icons=true&locale=en&layout=compact" alt="sandhesha" /></p>
+### 👨‍💻 About Me
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=sandhesha&show_icons=true&locale=en" alt="sandhesha" /></p>
+- 🎓 3rd-year CSE (AIML) student at **AJIET**
+- 🚀 Passionate about AI/ML & Modern Web Development
+- 💡 Love building real-world applications
+- 🔧 Skilled in WordPress, Shopify & Full-Stack Development
+- 🤖 Currently learning and implementing ML models
+- 👯 Looking to collaborate on **Web Development Projects**
+- 📂 All projects: [github.com/sandhesha](https://github.com/sandhesha)
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=sandhesha&" alt="sandhesha" /></p>
+---
+
+### 🌐 Connect with Me
+
+<p align="left">
+<a href="https://www.linkedin.com/in/YOUR-LINKEDIN/" target="blank">
+<img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin" />
+</a>
+<a href="https://twitter.com/YOUR-USERNAME" target="blank">
+<img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter" />
+</a>
+</p>
+
+---
+
+### 🛠 Languages and Tools
+
+<p align="left">
+<img src="https://skillicons.dev/icons?i=html,css,js,bootstrap,c,cpp,mongodb,mysql,postgres,aws,git,github" />
+</p>
+
+---
+
+### 📊 GitHub Stats
+
+<p align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=sandhesha&show_icons=true&theme=tokyonight" />
+</p>
+
+<p align="center">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sandhesha&layout=compact&theme=tokyonight" />
+</p>
+
+<p align="center">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=sandhesha&theme=tokyonight" />
+</p>
