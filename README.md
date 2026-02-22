@@ -29,7 +29,7 @@
 <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter" />
 </a>
 <a href="https://instagram.com/YOUR-USERNAME" target="blank">
-<img src="https://img.shields.io/badge/instagram-blue?style=for-the-badge&logo=instagram" />
+<img src="https://img.shields.io/badge/instagram-pink?style=for-the-badge&logo=instagram" />
 </a>
 </p>
 
