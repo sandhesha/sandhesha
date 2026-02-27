@@ -31,9 +31,9 @@
 <a href="https://instagram.com/YOUR-USERNAME" target="blank">
 <img src="https://img.shields.io/badge/instagram-pink?style=for-the-badge&logo=instagram" />
 </a>
-<a href="https://Email.com/in/YOUR-USERNAME/" target="blank">
-<img src="https://img.shields.io/badge/Email-red?style=for-the-badge&logo=Email
-  " />
+<a href="mailto:sandeshsandu1010@gmail.com">
+  <img src="https://img.shields.io/badge/Email-Contact%20Me-red?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
 </a>
 </p>
 
