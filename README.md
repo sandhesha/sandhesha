@@ -32,7 +32,7 @@
 <img src="https://img.shields.io/badge/instagram-pink?style=for-the-badge&logo=instagram" />
 </a>
 <a href="mailto:sandeshsandu1010@gmail.com">
-  <img src="https://img.shields.io/badge/Email-Contact%20Me-red?style=for-the-badge&logo=gmail&logoColor=white" />
+  <img src="https://img.shields.io/badge/Email-Contact%20Me-red?style=for-the-badge&logo=gmail&logoColor=brown" />
 </a>
 </a>
 </p>
