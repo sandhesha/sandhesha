@@ -31,6 +31,10 @@
 <a href="https://instagram.com/YOUR-USERNAME" target="blank">
 <img src="https://img.shields.io/badge/instagram-pink?style=for-the-badge&logo=instagram" />
 </a>
+<a href="https://email.com/in/YOUR-EMAIL/" target="blank">
+<img src="https://img.shields.io/badge/Email-red?style=for-the-badge&logo=email
+  " />
+</a>
 </p>
 
 ---
