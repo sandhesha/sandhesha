@@ -1,3 +1,6 @@
+<div align="center">
+  <img height="150" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" />
+</div>
 <h1 align="center">Hi 👋, I'm Sandhesha</h1>
 <h3 align="center">🚀 Frontend Developer | AI/ML Enthusiast | CSE (AIML) Student</h3>
 
@@ -63,5 +66,8 @@
 </div>
 ---
 
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=Chethumalli&theme=radical&no-frame=true&margin-w=4)
+---
 
 
