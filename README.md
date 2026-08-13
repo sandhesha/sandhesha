@@ -63,7 +63,5 @@
 </div>
 ---
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=Chethumalli&theme=radical&no-frame=true&margin-w=4)
----
+
 
