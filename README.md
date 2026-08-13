@@ -53,21 +53,21 @@
 ---
 
 # 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=Chethumalli&theme=transparent&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=Chethumalli&theme=transparent&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Chethumalli&theme=transparent&hide_border=false&layout=compact)
+![](https://github-readme-stats.vercel.app/api?username=sandhesha&theme=transparent&hide_border=false&include_all_commits=false&count_private=false)<br/>
+![](https://nirzak-streak-stats.vercel.app/?user=sandhesha&theme=transparent&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=sandhesha&theme=transparent&hide_border=false&layout=compact)
 
 ---
 <h2 align="center">🌊 Contribution Activity</h2>
 
 <!-- 3D Wave Style Activity Graph -->
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Chethumalli&theme=transparent&hide_border=true&area=true&bg_color=000000&color=00FFFB&line=00FFFB" width="90%" alt="Contribution Graph">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=sandhesha&theme=transparent&hide_border=true&area=true&bg_color=000000&color=00FFFB&line=00FFFB" width="90%" alt="Contribution Graph">
 </div>
 ---
 
 ## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=Chethumalli&theme=radical&no-frame=true&margin-w=4)
+![](https://github-profile-trophy.vercel.app/?username=sandhesha&theme=radical&no-frame=true&margin-w=4)
 ---
 
 
