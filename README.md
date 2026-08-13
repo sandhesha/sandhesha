@@ -49,10 +49,26 @@
 
 ---
 
-### 📊 GitHub Stats
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=Chethumalli&theme=transparent&hide_border=false&include_all_commits=false&count_private=false)<br/>
+![](https://nirzak-streak-stats.vercel.app/?user=Chethumalli&theme=transparent&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=Chethumalli&theme=transparent&hide_border=false&layout=compact)
 
-<p align="center">
-   alt="Sandhesha's GitHub Stats" />
-  <br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sandhesha&theme=tokyonight&hide_border=true" alt="Sandhesha's GitHub Streak" />
-</p>
+---
+<h2 align="center">🌊 Contribution Activity</h2>
+
+<!-- 3D Wave Style Activity Graph -->
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Chethumalli&theme=transparent&hide_border=true&area=true&bg_color=000000&color=00FFFB&line=00FFFB" width="90%" alt="Contribution Graph">
+</div>
+---
+
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=Chethumalli&theme=radical&no-frame=true&margin-w=4)
+---
+
+### ✍️ Developer Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+---
+
+[![](https://visitcount.itsvg.in/api?id=Chethumalli&icon=0&color=0)](https://visitcount.itsvg.in)
