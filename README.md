@@ -72,4 +72,8 @@
 
 
 
-this is my old github readme
+<div align="center">
+
+⭐ Thanks for visiting my profile!
+
+</div>
